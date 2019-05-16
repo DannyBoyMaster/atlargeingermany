@@ -1,6 +1,8 @@
 {% include header.html %}
 <main class="Main Main--blog-list">
     <section class="Main-content" data-content-field="main-content">
+        <h1 class="BlogItem-title" data-content-field="title">{{ page.title }}</h1>
+        <div class="Blog-meta BlogItem-meta"><time class="Blog-meta-item Blog-meta-item--date">{{page.date | date: "%B %-d, %Y" }}</time></div>
         {{ content }}
     </section>
 </main>
