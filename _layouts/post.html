@@ -214,37 +214,21 @@
                                 <div class="sqs-block html-block sqs-block-html" data-block-type="2"
                                     id="block-d47b51c64033b5546b32">
                                     <div class="sqs-block-content">
-                                        <h3 style="white-space:pre-wrap;">On 27th April 1942, Flight Lieutenants Gerald
-                                            Williams and Hugh Keartland crawled underneath the front gate of a prisoner
-                                            of war camp in Warburg, Germany.</h3>
-                                        <h3 style="white-space:pre-wrap;">Their goal, Switzerland, lay to the south.
-                                            Walking on the autobahn at night, and with limited food and clothing, they
-                                            covered 450km over 17 days before their eventual re-capture in the Black
-                                            Forest. By their estimate, the Swiss border was just 3 days away.</h3>
-                                        <h3 style="white-space:pre-wrap;">Thanks to a report written by Williams shortly
-                                            after re-capture, we are able to plot their path with a high degree of
-                                            accuracy.</h3>
-                                        <h3 style="white-space:pre-wrap;">“At Large In Germany” is an attempt at walking
-                                            in their footsteps: to retrace Williams and Keartland’s route in the same
-                                            number of days, at the same time of year, 77 years later.</h3>
+                                        <h3 style="white-space:pre-wrap;">On 27th April 1942, Flight Lieutenants Gerald Williams and Hugh Keartland crawled underneath the front gate of a prisoner of war camp in Warburg, Germany.</h3>
+                                        <h3 style="white-space:pre-wrap;">Their goal, Switzerland, lay to the south. Walking on the autobahn at night, and with limited food and clothing, they covered 450km over 17 days before their eventual re-capture in the Black Forest. By their estimate, the Swiss border was just 3 days away.</h3>
+                                        <h3 style="white-space:pre-wrap;">Thanks to a report written by Williams shortly after re-capture, we are able to plot their path with a high degree of accuracy.</h3>
+                                        <h3 style="white-space:pre-wrap;">“At Large In Germany” is an attempt at walking in their footsteps: to retrace Williams and Keartland’s route in the same number of days, at the same time of year, 77 years later.</h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+                <section>
+                </section>
                 <main class="Main Main--blog-list">
                     <section class="Main-content" data-content-field="main-content">
-                        <section class="BlogList BlogList--posts-excerpt sqs-blog-list clear" data-columns="3">
-                            {% for post in site.posts %}
-                            <article class="BlogList-item hentry author-danny-pemberton post-type-text article-index-1">
-                                <a href="{{ post.url }}" class="BlogList-item-title"data-content-field="title">{{ post.title }}</a>
-                                <div class="Blog-meta BlogList-item-meta">
-                                    <time class="Blog-meta-item Blog-meta-item--date">{{post.date | date: "%-d %B %Y" }}</time>
-                                </div>
-                            </article>
-                            {% endfor %}
-                        </section>
+                        {{ content }}
                     </section>
                 </main>
             </div>
@@ -270,7 +254,11 @@
                                 <div class="sqs-block html-block sqs-block-html" data-block-type="2"
                                     id="block-yui_3_17_2_1_1554405537888_12528">
                                     <div class="sqs-block-content">
-                                        <p style="white-space:pre-wrap;">This website uses the typeface “DIN 2014”, a modern descendant of the typeface used on German Autobahns in 1942. Along with a series of smuggled and homemade maps, Autobahn signage was the primary method of navigation employed by Gerald and Hugh during their journey.</p>
+                                        <p style="white-space:pre-wrap;">This website uses the typeface “DIN 2014”, a
+                                            modern descendant of the typeface used on German Autobahns in 1942. Along
+                                            with a series of smuggled and homemade maps, Autobahn signage was the
+                                            primary method of navigation employed by Gerald and Hugh during their
+                                            journey.</p>
                                     </div>
                                 </div>
                             </div>
