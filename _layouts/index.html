@@ -23,7 +23,7 @@
             <section class="BlogList BlogList--posts-excerpt sqs-blog-list clear" data-columns="3">
                 {% for post in site.posts %}
                 <article class="BlogList-item hentry author-danny-pemberton post-type-text article-index-1">
-                    <a href="{{ post.url }}" class="BlogList-item-title" data-content-field="title">{{ post.title }}</a>
+                    <a href="{{ post.url | relative_url  }}" class="BlogList-item-title" data-content-field="title">{{ post.title }}</a>
                     <div class="Blog-meta BlogList-item-meta">
                         <time class="Blog-meta-item Blog-meta-item--date">{{post.date | date: "%B %-d, %Y" }}</time>
                     </div>
