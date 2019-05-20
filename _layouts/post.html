@@ -63,7 +63,7 @@
 
                     {% if page.previous.url %}
 
-                <a href="{{ site.baseurl }}{{ page.previous.url }}"
+                <a href="{{ page.previous.url| relative_url }}"
                     class="BlogItem-pagination-link BlogItem-pagination-link--prev">
                     <svg class="BlogItem-pagination-link-icon" viewBox="0 0 23 48">
                         <g class="svg-icon">
@@ -86,7 +86,7 @@
 
                 {% if page.next.url %}
 
-                <a href="{{ site.baseurl }}{{ page.next.url }}" class="BlogItem-pagination-link BlogItem-pagination-link--next">
+                <a href="{{ page.next.url | relative_url}}" class="BlogItem-pagination-link BlogItem-pagination-link--next">
                     <div class="BlogItem-pagination-link-content">
                         
                         <div class="BlogItem-pagination-link-label">Next</div>
